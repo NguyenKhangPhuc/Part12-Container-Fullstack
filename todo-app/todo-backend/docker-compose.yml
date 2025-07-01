@@ -1,0 +1,9 @@
+services:
+  app: 
+    image: todo-backend-production
+    build:
+      context: .
+      dockerfile: Dockerfile 
+    ports:
+      - 3000:3000
+    container_name: todo-backend-production
